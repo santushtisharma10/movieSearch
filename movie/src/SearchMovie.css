@@ -1,0 +1,16 @@
+form {
+
+    text-align: center;
+}
+input {
+
+    padding: 18px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    width: 50%;
+}
+button {
+
+    padding: 16px;
+    border-radius: 10px;
+}
