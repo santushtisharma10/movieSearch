@@ -6,11 +6,35 @@ input {
 
     padding: 18px;
     font-size: 1.2em;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 50%;
+    background-color: lavender;
+    
 }
 button {
-
+    background-color: rgb(50, 66, 94);
+    color: honeydew;
     padding: 16px;
     border-radius: 10px;
 }
+.movie-list {
+
+    margin-top: 5rem;
+}
+.card {
+
+    
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    margin-bottom: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    background-color: rgba(255, 255, 255, 0.719);
+    background-color: lavender;
+}
+.card-content {
+
+   padding: 1rem 4rem;
+   margin: 4rem;
+}
+
