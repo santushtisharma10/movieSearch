@@ -1,5 +1,6 @@
 import "./SearchMovie.css"
 import React, {useState} from "react"
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 export default function SearchMovie() {
      
@@ -33,19 +34,19 @@ export default function SearchMovie() {
                 <input type="text" placeholder="Movie Name" name="moviename" value={query} onChange={(e)=> setQuery(e.target.value)} required></input>
                 <button type="submit" className="button">&nbsp;&nbsp; Search &nbsp;&nbsp;</button>
             </form>
-            <div className="movie-list">
+            <div className="row">
                 {array.filter(element => element.poster_path).map(element => (
-
+                     <div className="col-md-4">
                     <div className="card" key={element.id}>
                         
                         <img className="card-image" src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2/${element.poster_path}`} />
-                        <div className="card-content">
-                            <h1>{element.title}</h1>
-                            <p>Ratings : {element.vote_average}</p>
-                            <p>Release Date : {element.release_date}</p>
-                            <h5>{element.overview}</h5>
+                        <div className="card-body">
+                            <h1 className="card-title">{element.title}</h1>
+                            <p className="card-text">Ratings : {element.vote_average}</p>
+                            <p className="card-text">Release Date : {element.release_date}</p>
+                            <h5 className="card-title">{element.overview}</h5>
                         </div>
-                    
+                        </div>
                     </div>
                 ))}
             </div>
