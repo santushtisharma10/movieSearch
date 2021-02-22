@@ -17,6 +17,10 @@ button {
     padding: 16px;
     border-radius: 10px;
 }
+.search-results {
+
+    margin-left: 1.5rem;
+}
 .row {
 
     margin-top: 3rem;
