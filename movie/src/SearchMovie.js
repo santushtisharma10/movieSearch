@@ -17,11 +17,9 @@ export default function SearchMovie() {
 
         const res = await fetch(url);
         const data = await res.json();
-        //console.log(data.results)
         setArr(data.results)
+        if(array.length)
         setStatement(true)
-        console.log(data);
-        console.log({ array })
     }
 
 
@@ -37,7 +35,7 @@ export default function SearchMovie() {
             <br />
             {statement && <h1 className="search-results"> Based On Your Search </h1>}
             <div className="row padding">
-                
+
                 {array.filter(element => element.poster_path).map(element => (
                     <div className="col-md-4">
                         <div className="card" key={element.id}>
