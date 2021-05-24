@@ -1,5 +1,5 @@
 # Movie Search App
-Movie Search App is a react single page application which shows the information like description, ratings, release date of the related movie that the user searched for.
+Movie Search App is a react single page application which shows the information like description, ratings, release date of the related movie or show that the user searched for.
 
 ### Output
 
